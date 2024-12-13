@@ -18,29 +18,25 @@ const MainScreen = ({ navigation }) => {
 
         <View style={styles.container}>
             <View style={styles.emotionarea}>
+                <Text style={styles.emotiontext}> Duygularını Ne Kadar İyi Tanıyorsun? </Text>
                 <View style={styles.emotions}>
                     <EmojiCards
-                        name="Happy"
-                        image={require('../../assets/images/happy.png')}
+                        image={require('../../assets/images/sm.png')}
                     />
 
                     <EmojiCards
-                        name="Unhappy"
-                        image={require('../../assets/images/happy.png')} />
+                        image={require('../../assets/images/sd.png')} />
 
 
                     <EmojiCards
-                        name="Shock"
-                        image={require('../../assets/images/happy.png')} />
+                        image={require('../../assets/images/shocked.png')} />
 
 
                     <EmojiCards
-                        name="Unhappy"
-                        image={require('../../assets/images/happy.png')} />
+                        image={require('../../assets/images/lv.png')} />
 
                     <EmojiCards
-                        name="Unhappy"
-                        image={require('../../assets/images/happy.png')} />
+                        image={require('../../assets/images/anger.png')} />
 
 
 
@@ -57,16 +53,16 @@ const MainScreen = ({ navigation }) => {
                 <View style={styles.categoriesButtons}>
 
                     <CategoryCards
-                        name="Xdfsdf"
-                        image={require('../../assets/images/comfortzone.png')} />
+                        name="Counseling"
+                        image={require('../../assets/images/counseling.png')} />
 
                     <CategoryCards
-                        name="Yfdsfs"
-                        image={require('../../assets/images/wash.png')} />
+                        name="Sport"
+                        image={require('../../assets/images/sport.png')} />
 
                     <CategoryCards
-                        name="Zfdsfs"
-                        image={require('../../assets/images/happy.png')} />
+                        name="Inner Journey"
+                        image={require('../../assets/images/ij.png')} />
 
 
 
@@ -77,43 +73,37 @@ const MainScreen = ({ navigation }) => {
 
             <View style={styles.blogsContainer}>
 
-                <View>
-                    <Text style={styles.blogsHeader}> Blog </Text> </View>
+                <View style={styles.blogText}>
+                    <Text style={styles.blogsHeader}>Blog </Text>
+                </View>
+
+                <BlogCards
+                    backgroundColor="#fcd5ce"
+                    text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
+                    image={require('../../assets/images/angry.png')}
+                />
 
 
 
                 <BlogCards
-                    name="fjdfsdfsfsfds"
-                    image={require('../../assets/images/happy.png')}
-                    button="gdfdgdgfd" />
-
-
-
-                <BlogCards
-                    name="fjfdsfsfdfds"
+                    backgroundColor="#ffd7ba"
+                    text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
                     image={require('../../assets/images/wash.png')}
-                    button="dsdsdfgdgdgds" />
+                />
 
 
 
 
                 <BlogCards
-                    name="fjdffdsfsfdsds"
-                    image={require('../../assets/images/happy.png')}
-                    button="dsdgfdgddresds" />
-
-
+                    backgroundColor="#fae1dd"
+                    text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
+                    image={require('../../assets/images/angry.png')}
+                />
 
 
             </View>
 
-
-
         </View>
-
-
-
-
 
 
 
@@ -136,20 +126,30 @@ const styles = StyleSheet.create({
         height: 110,
         marginTop: 100,
         marginLeft: 20,
-        backgroundColor: "lightgreen",
+        backgroundColor: "#f8edeb",
         borderRadius: 16,
     },
 
-    emotions: {
+    emotiontext: {
 
+        textAlign: "center",
+        marginTop: 10,
+        color: "#b2967d",
+        fontWeight: "bold"
+
+
+    },
+
+    emotions: {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        gap: 10,
+        gap: 25,
         marginTop: 10,
-        marginLeft: 17,
+        marginLeft: 19,
         width: 330,
-        height: 100,
+        height: 60,
+
 
 
     },
@@ -184,9 +184,17 @@ const styles = StyleSheet.create({
         width: 370,
         height: 500,
         marginLeft: 20,
+        marginTop: 20,
 
 
+    },
 
+    blogText: {
+
+        width: 300,
+        height: 35,
+        marginTop: 20,
+        marginRight: 60,
 
 
     },
@@ -207,9 +215,6 @@ const styles = StyleSheet.create({
 }
 
 )
-
-
-
 
 
 export default MainScreen;

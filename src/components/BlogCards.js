@@ -1,34 +1,21 @@
 import { View, Text, Image, StyleSheet } from 'react-native';
 
 
-export default function BlogCards({ name, image, button }) {
+export default function BlogCards({ text, image, backgroundColor }) {
 
 
     return (
 
-        <View style={styles.blogArea}>
-
-            <Image
-                source={image}
-                style={styles.blogImages} />
-
-
-            <Text style={styles.blogText}> {name} </Text>
-
-            <Text style={styles.blogButton}> {button} </Text>
+        <View style={[styles.blogArea, { backgroundColor }]}>
+            <View style={styles.blogIndex}>
+                <Text style={styles.blogText}> {text} </Text>
+                <Image
+                    source={image}
+                    style={styles.blogImages} />
 
 
-
-
-
-
+            </View>
         </View>
-
-
-
-
-
-
 
     )
 
@@ -48,10 +35,23 @@ const styles = StyleSheet.create({
         alignItems: "center",
         width: 370,
         height: 120,
-        backgroundColor: "green",
+        // backgroundColor: "#ffe5d9",
         marginTop: 20,
+        marginBottom: 10,
+        borderRadius: 12,
 
     },
+
+    blogIndex: {
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        width: 370,
+        height: 100,
+
+    },
+
+
 
 
 
@@ -59,41 +59,22 @@ const styles = StyleSheet.create({
 
         width: 50,
         height: 50,
-        marginTop: 280,
-        marginLeft: 300,
-
-
-
-
 
     },
 
     blogText: {
+        width: 270,
+        height: 100,
+        fontSize: 15,
+        color: 'black',
+        marginRight: 50,
+        marginTop: 120,
 
-        fontSize: 25,
-        color: 'red',
-        marginLeft: 20,
-        marginBottom: 95,
+
 
 
 
     },
-
-    blogButton: {
-
-        color: "pink",
-        fontSize: 20,
-        marginRight: 60,
-        marginBottom: 90,
-
-
-
-
-
-    }
-
-
-
 
 
 

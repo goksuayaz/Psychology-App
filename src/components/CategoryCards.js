@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 
         width: 100,
         height: 100,
-        backgroundColor: "pink",
+        backgroundColor: "#d8e2dc",
         borderRadius: 16,
         marginBottom: 20,
 
