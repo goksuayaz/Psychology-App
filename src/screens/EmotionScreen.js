@@ -179,7 +179,6 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         marginTop: 60,
 
-
     },
 
     emotionsHeader: {
@@ -195,7 +194,6 @@ const styles = StyleSheet.create({
     emotionsText: {
         textAlign: "center",
         fontSize: 12,
-
         letterSpacing: 1,
         margin: 8,
 

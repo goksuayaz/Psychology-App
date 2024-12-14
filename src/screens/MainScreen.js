@@ -19,7 +19,6 @@ const MainScreen = ({ navigation }) => {
     return (
 
         <ScrollView>
-
             <View style={styles.container}>
                 <TouchableOpacity onPress={() => navigation.navigate("EmotionScreen")}>
                     <View style={styles.emotionarea}>
@@ -42,46 +41,31 @@ const MainScreen = ({ navigation }) => {
 
                             <EmojiCards
                                 image={require('../../assets/images/anger.png')} />
-
-
-
-
-
                         </View>
-
-
-
                     </View>
                 </TouchableOpacity>
-
 
                 <View style={styles.categories}>
                     <View style={styles.categoriesButtons}>
 
-                        <TouchableOpacity onPress={() => navigation.navigate("EmotionScreen")}>
+                        <TouchableOpacity onPress={() => navigation.navigate("CounselingScreen")}>
                             <CategoryCards
-                                name="Counseling"
+                                name="Psikolojik Danışmanlık"
                                 image={require('../../assets/images/counseling.png')} />
                         </TouchableOpacity>
 
+                        <CategoryCards
+                            name="Farkındalık"
+                            image={require('../../assets/images/inspire.png')} />
 
                         <CategoryCards
-                            name="Sport"
-                            image={require('../../assets/images/sport.png')} />
-
-                        <CategoryCards
-                            name="Inner Journey"
-                            image={require('../../assets/images/ij.png')} />
-
-
-
+                            name="İçsel Yolculuk"
+                            image={require('../../assets/images/injo.png')} />
 
                     </View>
                 </View>
 
-
                 <View style={styles.blogsContainer}>
-
                     <View style={styles.blogText}>
                         <Text style={styles.blogsHeader}>Blog </Text>
                     </View>
@@ -89,33 +73,24 @@ const MainScreen = ({ navigation }) => {
                     <BlogCards
                         backgroundColor="#fcd5ce"
                         text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
-                        image={require('../../assets/images/angry.png')}
+                        image={require('../../assets/images/comfortzone.png')}
                     />
 
-
-
                     <BlogCards
-                        backgroundColor="#ffd7ba"
+                        backgroundColor="#fae1dd"
                         text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
                         image={require('../../assets/images/wash.png')}
                     />
 
-
-
-
                     <BlogCards
-                        backgroundColor="#fae1dd"
+                        backgroundColor="#ffd7ba"
                         text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
-                        image={require('../../assets/images/angry.png')}
+                        image={require('../../assets/images/inner.png')}
                     />
 
-
                 </View>
-
             </View>
-
         </ScrollView>
-
 
     );
 };
@@ -142,8 +117,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         color: "#b2967d",
         fontWeight: "bold"
-
-
     },
 
     emotions: {
@@ -155,9 +128,6 @@ const styles = StyleSheet.create({
         marginLeft: 19,
         width: 330,
         height: 60,
-
-
-
     },
 
 
@@ -181,9 +151,7 @@ const styles = StyleSheet.create({
 
     },
 
-
     blogsContainer: {
-
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
@@ -191,36 +159,21 @@ const styles = StyleSheet.create({
         height: 500,
         marginLeft: 20,
         marginTop: 20,
-
-
     },
 
     blogText: {
-
         width: 300,
         height: 35,
         marginTop: 20,
         marginRight: 60,
-
-
     },
-
 
     blogsHeader: {
-
         color: "#000",
         fontSize: 25,
-
-
-
     },
-
-
-
-
 }
 
 )
-
 
 export default MainScreen;
