@@ -2,6 +2,8 @@ import {
     View,
     Text,
     StyleSheet,
+    TouchableOpacity,
+    ScrollView,
 
 } from "react-native";
 import React from "react";
@@ -16,99 +18,103 @@ const Stack = createStackNavigator();
 const MainScreen = ({ navigation }) => {
     return (
 
-        <View style={styles.container}>
-            <View style={styles.emotionarea}>
-                <Text style={styles.emotiontext}> Duygularını Ne Kadar İyi Tanıyorsun? </Text>
-                <View style={styles.emotions}>
-                    <EmojiCards
-                        image={require('../../assets/images/sm.png')}
+        <ScrollView>
+
+            <View style={styles.container}>
+                <TouchableOpacity onPress={() => navigation.navigate("EmotionScreen")}>
+                    <View style={styles.emotionarea}>
+                        <Text style={styles.emotiontext}> Duygularını Ne Kadar İyi Tanıyorsun? </Text>
+                        <View style={styles.emotions}>
+                            <EmojiCards
+                                image={require('../../assets/images/sm.png')}
+                            />
+
+                            <EmojiCards
+                                image={require('../../assets/images/sd.png')} />
+
+
+                            <EmojiCards
+                                image={require('../../assets/images/shocked.png')} />
+
+
+                            <EmojiCards
+                                image={require('../../assets/images/lv.png')} />
+
+                            <EmojiCards
+                                image={require('../../assets/images/anger.png')} />
+
+
+
+
+
+                        </View>
+
+
+
+                    </View>
+                </TouchableOpacity>
+
+
+                <View style={styles.categories}>
+                    <View style={styles.categoriesButtons}>
+
+                        <TouchableOpacity onPress={() => navigation.navigate("EmotionScreen")}>
+                            <CategoryCards
+                                name="Counseling"
+                                image={require('../../assets/images/counseling.png')} />
+                        </TouchableOpacity>
+
+
+                        <CategoryCards
+                            name="Sport"
+                            image={require('../../assets/images/sport.png')} />
+
+                        <CategoryCards
+                            name="Inner Journey"
+                            image={require('../../assets/images/ij.png')} />
+
+
+
+
+                    </View>
+                </View>
+
+
+                <View style={styles.blogsContainer}>
+
+                    <View style={styles.blogText}>
+                        <Text style={styles.blogsHeader}>Blog </Text>
+                    </View>
+
+                    <BlogCards
+                        backgroundColor="#fcd5ce"
+                        text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
+                        image={require('../../assets/images/angry.png')}
                     />
 
-                    <EmojiCards
-                        image={require('../../assets/images/sd.png')} />
 
 
-                    <EmojiCards
-                        image={require('../../assets/images/shocked.png')} />
-
-
-                    <EmojiCards
-                        image={require('../../assets/images/lv.png')} />
-
-                    <EmojiCards
-                        image={require('../../assets/images/anger.png')} />
+                    <BlogCards
+                        backgroundColor="#ffd7ba"
+                        text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
+                        image={require('../../assets/images/wash.png')}
+                    />
 
 
 
 
-
-                </View>
-
-
-
-            </View>
-
-
-            <View style={styles.categories}>
-                <View style={styles.categoriesButtons}>
-
-                    <CategoryCards
-                        name="Counseling"
-                        image={require('../../assets/images/counseling.png')} />
-
-                    <CategoryCards
-                        name="Sport"
-                        image={require('../../assets/images/sport.png')} />
-
-                    <CategoryCards
-                        name="Inner Journey"
-                        image={require('../../assets/images/ij.png')} />
-
-
+                    <BlogCards
+                        backgroundColor="#fae1dd"
+                        text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
+                        image={require('../../assets/images/angry.png')}
+                    />
 
 
                 </View>
-            </View>
-
-
-            <View style={styles.blogsContainer}>
-
-                <View style={styles.blogText}>
-                    <Text style={styles.blogsHeader}>Blog </Text>
-                </View>
-
-                <BlogCards
-                    backgroundColor="#fcd5ce"
-                    text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
-                    image={require('../../assets/images/angry.png')}
-                />
-
-
-
-                <BlogCards
-                    backgroundColor="#ffd7ba"
-                    text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
-                    image={require('../../assets/images/wash.png')}
-                />
-
-
-
-
-                <BlogCards
-                    backgroundColor="#fae1dd"
-                    text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
-                    image={require('../../assets/images/angry.png')}
-                />
-
 
             </View>
 
-        </View>
-
-
-
-
-
+        </ScrollView>
 
 
     );
