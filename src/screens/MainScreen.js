@@ -60,9 +60,11 @@ const MainScreen = ({ navigation }) => {
                                 image={require('../../assets/images/inspire.png')} />
                         </TouchableOpacity>
 
-                        <CategoryCards
-                            name="İçsel Yolculuk"
-                            image={require('../../assets/images/injo.png')} />
+                        <TouchableOpacity onPress={() => navigation.navigate("InnerJScreen")}>
+                            <CategoryCards
+                                name="İçsel Yolculuk"
+                                image={require('../../assets/images/injo.png')} />
+                        </TouchableOpacity>
 
                     </View>
                 </View>
