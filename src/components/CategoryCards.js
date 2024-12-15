@@ -28,10 +28,9 @@ const styles = StyleSheet.create({
 
     categoryBorder: {
 
-        width: 100,
-        height: 100,
-        backgroundColor: "#d8e2dc",
-        borderRadius: 16,
+        width: 95,
+        height: 95,
+        backgroundColor: "transparent",
         marginBottom: 20,
 
 
@@ -47,6 +46,7 @@ const styles = StyleSheet.create({
         height: 90,
         marginTop: 5,
         marginLeft: 5,
+        borderRadius: 16,
 
     },
 
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     ImageText: {
 
         textAlign: "center",
-        marginTop: 10,
-        fontSize: 15,
+        marginTop: 7,
+        fontSize: 12,
 
     },
 

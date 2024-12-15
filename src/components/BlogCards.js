@@ -9,13 +9,15 @@ export default function BlogCards({ text, image, backgroundColor }) {
         <View style={[styles.blogArea, { backgroundColor }]}>
             <View style={styles.blogIndex}>
                 <Text style={styles.blogText}> {text} </Text>
-                <Image
-                    source={image}
-                    style={styles.blogImages} />
-
-
+                <View style={styles.imageArea}>
+                    <Image
+                        source={image}
+                        style={styles.blogImages} />
+                </View>
             </View>
+
         </View>
+
 
     )
 
@@ -35,10 +37,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         width: 370,
         height: 120,
-        // backgroundColor: "#ffe5d9",
-        marginTop: 20,
         marginBottom: 10,
         borderRadius: 12,
+
+
+
 
     },
 
@@ -47,34 +50,42 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         width: 370,
-        height: 100,
+        height: 105,
 
     },
-
-
-
 
 
     blogImages: {
 
-        width: 50,
-        height: 50,
+        width: 80,
+        height: 80,
+        borderRadius: 16,
 
     },
 
     blogText: {
-        width: 270,
-        height: 100,
-        fontSize: 15,
+        width: 260,
+        height: 80,
+        fontSize: 14,
         color: 'black',
-        marginRight: 50,
-        marginTop: 120,
-
-
-
-
+        marginLeft: 14,
+        marginBottom: 50,
+        marginTop: 50,
 
     },
+
+
+    imageArea: {
+        justifyContent: "center",
+        alignItems: "center",
+        width: 90,
+        height: 90,
+        marginTop: 5,
+        marginLeft: 4,
+
+
+
+    }
 
 
 

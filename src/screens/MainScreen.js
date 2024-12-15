@@ -51,47 +51,50 @@ const MainScreen = ({ navigation }) => {
                         <TouchableOpacity onPress={() => navigation.navigate("CounselingScreen")}>
                             <CategoryCards
                                 name="Psikolojik Danışmanlık"
-                                image={require('../../assets/images/counseling.png')} />
+                                image={require('../../assets/images/psy.png')} />
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => navigation.navigate("AwarenessScreen")}>
                             <CategoryCards
                                 name="Farkındalık"
-                                image={require('../../assets/images/inspire.png')} />
+                                image={require('../../assets/images/awr.png')} />
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => navigation.navigate("InnerJScreen")}>
                             <CategoryCards
                                 name="İçsel Yolculuk"
-                                image={require('../../assets/images/injo.png')} />
+                                image={require('../../assets/images/inn.png')} />
                         </TouchableOpacity>
 
                     </View>
                 </View>
 
                 <View style={styles.blogsContainer}>
-                    <View style={styles.blogText}>
+                    <View style={styles.blogTextArea}>
                         <Text style={styles.blogsHeader}>Blog </Text>
                     </View>
 
-                    <BlogCards
-                        backgroundColor="#fcd5ce"
-                        text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
-                        image={require('../../assets/images/comfortzone.png')}
-                    />
+                    <View style={styles.cardsArea}>
 
-                    <BlogCards
-                        backgroundColor="#fae1dd"
-                        text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
-                        image={require('../../assets/images/wash.png')}
-                    />
+                        <BlogCards
+                            backgroundColor="#fcd5ce"
+                            text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
+                            image={require('../../assets/images/ts.png')}
+                        />
 
-                    <BlogCards
-                        backgroundColor="#ffd7ba"
-                        text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
-                        image={require('../../assets/images/inner.png')}
-                    />
+                        <BlogCards
+                            backgroundColor="#fae1dd"
+                            text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
+                            image={require('../../assets/images/ts.png')}
+                        />
 
+                        <BlogCards
+                            backgroundColor="#ffd7ba"
+                            text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
+                            image={require('../../assets/images/ts.png')}
+                        />
+
+                    </View>
                 </View>
             </View>
         </ScrollView>
@@ -160,21 +163,38 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         width: 370,
-        height: 500,
+        height: 800,
         marginLeft: 20,
-        marginTop: 20,
+        marginBottom: 200,
+
+
+
     },
 
-    blogText: {
+    blogTextArea: {
         width: 300,
-        height: 35,
-        marginTop: 20,
+        height: 30,
+        marginBottom: 10,
+        marginTop: 70,
         marginRight: 60,
+
+
     },
 
     blogsHeader: {
         color: "#000",
-        fontSize: 25,
+        fontSize: 18,
+        marginBottom: 6,
+    },
+
+    cardsArea: {
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        width: 370,
+        height: 395,
+        marginBottom: 400
+
     },
 }
 
