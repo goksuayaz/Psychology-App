@@ -54,9 +54,11 @@ const MainScreen = ({ navigation }) => {
                                 image={require('../../assets/images/counseling.png')} />
                         </TouchableOpacity>
 
-                        <CategoryCards
-                            name="Farkındalık"
-                            image={require('../../assets/images/inspire.png')} />
+                        <TouchableOpacity onPress={() => navigation.navigate("AwarenessScreen")}>
+                            <CategoryCards
+                                name="Farkındalık"
+                                image={require('../../assets/images/inspire.png')} />
+                        </TouchableOpacity>
 
                         <CategoryCards
                             name="İçsel Yolculuk"
