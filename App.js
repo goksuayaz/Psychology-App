@@ -5,6 +5,7 @@ import EmotionScreen from './src/screens/EmotionScreen';
 import CounselingScreen from './src/screens/CounselingScreen';
 import AwarenessScreen from './src/screens/AwarenessScreen';
 import InnerJScreen from './src/screens/InnerJScreen';
+import SMScreen from './src/screens/SMScreen';
 
 
 
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen options={{ headerShown: false }} name="CounselingScreen" component={CounselingScreen} />
         <Stack.Screen options={{ headerShown: false }} name="AwarenessScreen" component={AwarenessScreen} />
         <Stack.Screen options={{ headerShown: false }} name="InnerJScreen" component={InnerJScreen} />
+        <Stack.Screen options={{ headerShown: false }} name="SMScreen" component={SMScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 

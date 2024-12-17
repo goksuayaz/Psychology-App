@@ -63,7 +63,7 @@ const MainScreen = ({ navigation }) => {
                         <TouchableOpacity onPress={() => navigation.navigate("InnerJScreen")}>
                             <CategoryCards
                                 name="İçsel Yolculuk"
-                                image={require('../../assets/images/inn.png')} />
+                                image={require('../../assets/images/innerj.png')} />
                         </TouchableOpacity>
 
                     </View>
@@ -76,20 +76,22 @@ const MainScreen = ({ navigation }) => {
 
                     <View style={styles.cardsArea}>
 
-                        <BlogCards
-                            backgroundColor="#fcd5ce"
-                            text="fjdfsdfsfsfds sdfsdfs sfsfdsfsdfsgrtrtr yuytrrtyy"
-                            image={require('../../assets/images/ts.png')}
-                        />
+                        <TouchableOpacity onPress={() => navigation.navigate("SMScreen")}>
+                            <BlogCards
+                                backgroundColor="#64dfdf"
+                                text="Sosyal Medyanın İnsan Psikolojisi Üzerindeki Etkileri..."
+                                image={require('../../assets/images/socmed.png')}
+                            />
+                        </TouchableOpacity>
 
                         <BlogCards
-                            backgroundColor="#fae1dd"
+                            backgroundColor="#48bfe3"
                             text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
-                            image={require('../../assets/images/ts.png')}
+                            image={require('../../assets/images/sendr.png')}
                         />
 
                         <BlogCards
-                            backgroundColor="#ffd7ba"
+                            backgroundColor="#80ffdb"
                             text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
                             image={require('../../assets/images/ts.png')}
                         />
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
         height: 110,
         marginTop: 100,
         marginLeft: 20,
-        backgroundColor: "#f8edeb",
+        backgroundColor: "#6930c3",
         borderRadius: 16,
     },
 

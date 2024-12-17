@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Button } from 'react-native';
 
 
 export default function BlogCards({ text, image, backgroundColor }) {
@@ -13,6 +13,8 @@ export default function BlogCards({ text, image, backgroundColor }) {
                     <Image
                         source={image}
                         style={styles.blogImages} />
+
+
                 </View>
             </View>
 
@@ -20,10 +22,6 @@ export default function BlogCards({ text, image, backgroundColor }) {
 
 
     )
-
-
-
-
 
 
 
@@ -67,10 +65,11 @@ const styles = StyleSheet.create({
         width: 260,
         height: 80,
         fontSize: 14,
-        color: 'black',
+        color: '#6930c3',
         marginLeft: 14,
-        marginBottom: 50,
-        marginTop: 50,
+        marginTop: 30,
+        textAlign: "center",
+        fontWeight: "bold"
 
     },
 
@@ -85,7 +84,10 @@ const styles = StyleSheet.create({
 
 
 
-    }
+    },
+
+
+
 
 
 
