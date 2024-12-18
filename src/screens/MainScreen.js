@@ -4,6 +4,7 @@ import {
     StyleSheet,
     TouchableOpacity,
     ScrollView,
+    Dimensions,
 
 } from "react-native";
 import React from "react";
@@ -12,13 +13,17 @@ import EmojiCards from "../components/EmojiCards";
 import CategoryCards from "../components/CategoryCards";
 import BlogCards from "../components/BlogCards";
 
+
+
+const { width } = Dimensions.get('window');
+
 const Stack = createStackNavigator();
 
 
 const MainScreen = ({ navigation }) => {
     return (
 
-        <ScrollView>
+        <ScrollView >
             <View style={styles.container}>
                 <TouchableOpacity onPress={() => navigation.navigate("EmotionScreen")}>
                     <View style={styles.emotionarea}>
@@ -84,17 +89,21 @@ const MainScreen = ({ navigation }) => {
                             />
                         </TouchableOpacity>
 
-                        <BlogCards
-                            backgroundColor="#48bfe3"
-                            text="fjfdsfsfdfds gfhfhfg jhjfgdgdgfgfdfgdfgdfgdgd"
-                            image={require('../../assets/images/sendr.png')}
-                        />
+                        <TouchableOpacity onPress={() => navigation.navigate("BurnoutScreen")}>
+                            <BlogCards
+                                backgroundColor="#48bfe3"
+                                text="Modern Dünyanın Sessiz Düşmanı: Tükenmişlik Sendromu..."
+                                image={require('../../assets/images/sendr.png')}
+                            />
+                        </TouchableOpacity>
 
-                        <BlogCards
-                            backgroundColor="#80ffdb"
-                            text="fjdffdsfsfdsds rhfghfdhfhgfhfasarterterte"
-                            image={require('../../assets/images/ts.png')}
-                        />
+                        <TouchableOpacity onPress={() => navigation.navigate("LonelinessScreen")}>
+                            <BlogCards
+                                backgroundColor="#80ffdb"
+                                text="Yalnızlık: Modern Çağın Sessiz Arkadaşı ve Psikolojik Etkileri"
+                                image={require('../../assets/images/alone.png')}
+                            />
+                        </TouchableOpacity>
 
                     </View>
                 </View>
@@ -108,14 +117,14 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#f8edeb",
     },
 
     emotionarea: {
-        width: 370,
+        width: width * 0.9,
         height: 110,
         marginTop: 100,
-        marginLeft: 20,
+        marginHorizontal: width * 0.05,
         backgroundColor: "#6930c3",
         borderRadius: 16,
     },
@@ -124,19 +133,16 @@ const styles = StyleSheet.create({
 
         textAlign: "center",
         marginTop: 10,
-        color: "#b2967d",
+        color: "#fff",
         fontWeight: "bold"
     },
 
     emotions: {
         flexDirection: "row",
-        justifyContent: "center",
+        justifyContent: "space-between",
         alignItems: "center",
-        gap: 25,
-        marginTop: 10,
-        marginLeft: 19,
-        width: 330,
-        height: 60,
+        marginHorizontal: 10,
+        marginTop: 15,
     },
 
 
