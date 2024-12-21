@@ -6,7 +6,7 @@ const LonelinessScreen = () => {
 
         <ScrollView>
             <View style={styles.container}>
-                <Text style={styles.headerTop}> Yalnızlık: Modern Çağın Sessiz Arkadaşı ve Psikolojik Etkileri </Text>
+                <Text style={styles.headerTop}>Yalnızlık: Çağımızın Sessiz Arkadaşı ve Psikolojik Etkileri </Text>
                 <Text style={styles.textArea}> Günümüzde yalnızlık, hem bir tercih hem de bir sonuç olarak karşımıza çıkan karmaşık bir deneyimdir. Teknolojiyle iç içe geçen hayatlarımız, fiziksel anlamda kalabalıklar içinde yaşamamıza rağmen, duygusal olarak yalnız hissetme oranlarımızı artırmıştır. Bu yazıda, yalnızlığın psikolojik etkilerini, avantajlarını ve dezavantajlarını ele alacağız. Ayrıca, insanların neden yalnızlığı tercih ettiğini ve uzun süre yalnız kalmanın neler doğurabileceğini tartışacağız. </Text>
                 <Text style={styles.header}> Yalnızlık Nedir ve Bize İyi Gelir mi?   </Text>
                 <Text style={styles.textArea}> Yalnızlık, basitçe bir bireyin kendini izole hissetmesi olarak tanımlanabilir. Ancak yalnızlık her zaman olumsuz bir deneyim değildir. Bazen insan, kendiyle baş başa kalmaya, düşüncelerini düzenlemeye ve içsel huzuru bulmaya ihtiyaç duyar. Bu tür yalnızlık, bilinçli bir tercih olduğunda, bireyin yaratıcılığını artırabilir, zihinsel berraklık sağlayabilir ve stres seviyelerini azaltabilir. Ancak kontrolsüz ve istenmeyen bir yalnızlık, duygusal sağlığı olumsuz etkileyerek depresyon, anksiyete ve hatta fiziksel sağlık sorunlarına yol açabilir. </Text>

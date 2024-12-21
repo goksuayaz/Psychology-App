@@ -6,7 +6,7 @@ const BurnoutScreen = () => {
 
         <ScrollView>
             <View style={styles.container}>
-                <Text style={styles.headerTop}>Modern Dünyanın Sessiz Düşmanı: Tükenmişlik Sendromu</Text>
+                <Text style={styles.headerTop}>Gizli Tehdit: Tükenmişlik Sendromu ve Ruhsal Dengenin Sarsılması</Text>
                 <Text style={styles.textArea}> Günümüz toplumunda hızla değişen yaşam koşulları, yoğun iş temposu ve sürekli artan beklentiler, bireylerin zihinsel ve fiziksel sınırlarını zorlamaktadır. Bu dinamik, modern dünyanın en yaygın psikolojik problemlerinden biri olan Tükenmişlik Sendromu'nun yaygınlaşmasına zemin hazırlamaktadır. İlk olarak 1974 yılında Herbert Freudenberger tarafından tanımlanan tükenmişlik sendromu, kişinin kronik stres nedeniyle enerji, motivasyon ve üretkenlik kaybı yaşamasıyla kendini gösterir.</Text>
                 <Text style={styles.header}> Tükenmişlik Sendromunun Belirtileri</Text>
                 <Text style={styles.textArea}> Tükenmişlik sendromu, genellikle fiziksel, duygusal ve davranışsal belirtilerle kendini belli eder. Fiziksel olarak enerji kaybı, uyku problemleri ve sık sık hastalanma gibi durumlar yaşanabilir. Duygusal belirtiler arasında karamsarlık, umutsuzluk ve yetersizlik hissi ön plandadır. Davranışsal olarak ise iş performansında düşüş, sosyal hayattan uzaklaşma ve günlük sorumlulukları yerine getirme konusunda isteksizlik gözlemlenebilir. </Text>

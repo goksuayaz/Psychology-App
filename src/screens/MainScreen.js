@@ -84,7 +84,7 @@ const MainScreen = ({ navigation }) => {
                         <TouchableOpacity onPress={() => navigation.navigate("SMScreen")}>
                             <BlogCards
                                 backgroundColor="#f9c74f"
-                                text="Sosyal Medyanın İnsan Psikolojisi Üzerindeki Etkileri..."
+                                text="Sosyal Ağların Gölgesi: İnsan Psikolojisine Etkileri..."
                                 image={require('../../assets/images/socmed.png')}
                             />
                         </TouchableOpacity>
@@ -92,7 +92,7 @@ const MainScreen = ({ navigation }) => {
                         <TouchableOpacity onPress={() => navigation.navigate("BurnoutScreen")}>
                             <BlogCards
                                 backgroundColor="#43aa8b"
-                                text="Modern Dünyanın Sessiz Düşmanı: Tükenmişlik Sendromu..."
+                                text="Gizli Tehdit: Tükenmişlik Sendromu ve Ruhsal Dengenin Sarsılması..."
                                 image={require('../../assets/images/sendr.png')}
                             />
                         </TouchableOpacity>
@@ -100,7 +100,7 @@ const MainScreen = ({ navigation }) => {
                         <TouchableOpacity onPress={() => navigation.navigate("LonelinessScreen")}>
                             <BlogCards
                                 backgroundColor="#f3722c"
-                                text="Yalnızlık: Modern Çağın Sessiz Arkadaşı ve Psikolojik Etkileri..."
+                                text="Yalnızlık: Çağımızın Sessiz Arkadaşı ve Psikolojik Etkileri..."
                                 image={require('../../assets/images/alone.png')}
                             />
                         </TouchableOpacity>

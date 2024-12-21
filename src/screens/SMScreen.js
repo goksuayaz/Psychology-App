@@ -6,7 +6,7 @@ const SMScreen = () => {
 
         <ScrollView>
             <View style={styles.container}>
-                <Text style={styles.headerTop}> Sosyal Medyanın İnsan Psikolojisi Üzerindeki Etkileri </Text>
+                <Text style={styles.headerTop}> Sosyal Ağların Gölgesi: İnsan Psikolojisine Etkileri </Text>
 
                 <Text style={styles.textArea}>
 
