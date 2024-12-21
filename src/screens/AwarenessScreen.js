@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
 
     container: {
 
-        backgroundColor: "pink"
+        backgroundColor: "#fff"
     },
 
     topHeader: {

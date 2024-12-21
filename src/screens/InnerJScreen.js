@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
 
     container: {
 
-        backgroundColor: "#f8edeb"
+        backgroundColor: "#fff"
 
     },
 

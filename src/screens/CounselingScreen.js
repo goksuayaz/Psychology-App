@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 
     counsContainer: {
 
-        backgroundColor: "#d8e2dc"
+        backgroundColor: "#fff"
     },
 
     counsHeaderTop: {

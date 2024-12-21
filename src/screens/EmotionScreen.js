@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
 
     emotionsContainer: {
 
-        backgroundColor: "#f8edeb",
+        backgroundColor: "#fff",
 
     },
 
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         textAlign: "center",
         marginTop: 10,
-        backgroundColor: "pink"
+
 
     },
 

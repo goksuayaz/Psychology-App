@@ -99,7 +99,7 @@ const MainScreen = ({ navigation }) => {
 
                         <TouchableOpacity onPress={() => navigation.navigate("LonelinessScreen")}>
                             <BlogCards
-                                backgroundColor="#f3722c"
+                                backgroundColor="#90be6d"
                                 text="Yalnızlık: Çağımızın Sessiz Arkadaşı ve Psikolojik Etkileri..."
                                 image={require('../../assets/images/alone.png')}
                             />
@@ -107,7 +107,7 @@ const MainScreen = ({ navigation }) => {
 
                         <TouchableOpacity onPress={() => navigation.navigate("SleepScreen")}>
                             <BlogCards
-                                backgroundColor="#277da1"
+                                backgroundColor="#f9844a"
                                 text="Günümüz Hayatı ve Uyku Krizi: Neden Uyuyamıyoruz?..."
                                 image={require('../../assets/images/slpp.png')}
                             />
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 
         textAlign: "center",
         marginTop: 10,
-        color: "#fff",
+        color: "#343a40",
         fontWeight: "bold"
     },
 
