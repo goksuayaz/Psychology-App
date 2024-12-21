@@ -83,7 +83,7 @@ const MainScreen = ({ navigation }) => {
 
                         <TouchableOpacity onPress={() => navigation.navigate("SMScreen")}>
                             <BlogCards
-                                backgroundColor="#64dfdf"
+                                backgroundColor="#f9c74f"
                                 text="Sosyal Medyanın İnsan Psikolojisi Üzerindeki Etkileri..."
                                 image={require('../../assets/images/socmed.png')}
                             />
@@ -91,7 +91,7 @@ const MainScreen = ({ navigation }) => {
 
                         <TouchableOpacity onPress={() => navigation.navigate("BurnoutScreen")}>
                             <BlogCards
-                                backgroundColor="#48bfe3"
+                                backgroundColor="#43aa8b"
                                 text="Modern Dünyanın Sessiz Düşmanı: Tükenmişlik Sendromu..."
                                 image={require('../../assets/images/sendr.png')}
                             />
@@ -99,9 +99,17 @@ const MainScreen = ({ navigation }) => {
 
                         <TouchableOpacity onPress={() => navigation.navigate("LonelinessScreen")}>
                             <BlogCards
-                                backgroundColor="#80ffdb"
-                                text="Yalnızlık: Modern Çağın Sessiz Arkadaşı ve Psikolojik Etkileri"
+                                backgroundColor="#f3722c"
+                                text="Yalnızlık: Modern Çağın Sessiz Arkadaşı ve Psikolojik Etkileri..."
                                 image={require('../../assets/images/alone.png')}
+                            />
+                        </TouchableOpacity>
+
+                        <TouchableOpacity onPress={() => navigation.navigate("SleepScreen")}>
+                            <BlogCards
+                                backgroundColor="#277da1"
+                                text="Günümüz Hayatı ve Uyku Krizi: Neden Uyuyamıyoruz?..."
+                                image={require('../../assets/images/slpp.png')}
                             />
                         </TouchableOpacity>
 
@@ -123,9 +131,9 @@ const styles = StyleSheet.create({
     emotionarea: {
         width: width * 0.9,
         height: 110,
-        marginTop: 100,
+        marginTop: 60,
         marginHorizontal: width * 0.05,
-        backgroundColor: "#6930c3",
+        backgroundColor: "#f94144",
         borderRadius: 16,
     },
 
@@ -159,7 +167,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         gap: 30,
-        marginTop: 30,
+        marginTop: 40,
         marginLeft: 20,
         width: 330,
         height: 100,
@@ -173,7 +181,7 @@ const styles = StyleSheet.create({
         width: 370,
         height: 800,
         marginLeft: 20,
-        marginBottom: 200,
+        marginTop: 40,
 
 
 
@@ -187,12 +195,13 @@ const styles = StyleSheet.create({
         marginRight: 60,
 
 
+
     },
 
     blogsHeader: {
-        color: "#000",
-        fontSize: 18,
-        marginBottom: 6,
+        color: "black",
+        fontSize: 35,
+        marginBottom: 100,
     },
 
     cardsArea: {

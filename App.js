@@ -8,6 +8,7 @@ import InnerJScreen from './src/screens/InnerJScreen';
 import SMScreen from './src/screens/SMScreen';
 import BurnoutScreen from './src/screens/BurnoutScreen';
 import LonelinessScreen from './src/screens/LonelinessScreen';
+import SleepScreen from './src/screens/SleepScreen';
 
 
 
@@ -29,6 +30,7 @@ export default function App() {
         <Stack.Screen options={{ headerShown: false }} name="SMScreen" component={SMScreen} />
         <Stack.Screen options={{ headerShown: false }} name="BurnoutScreen" component={BurnoutScreen} />
         <Stack.Screen options={{ headerShown: false }} name="LonelinessScreen" component={LonelinessScreen} />
+        <Stack.Screen options={{ headerShown: false }} name="SleepScreen" component={SleepScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 
